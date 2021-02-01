@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            Number:<input type="text" id="number" > <br><br>
+            Otp :<input type="text" id="otp"> <br><br>
+            <button onclick="login()">Submit</button>
+        </form>
+        <script>
+           function login() {
+               event.preventDefault();
+               var login ={
+                  "number_value" : document.getElementById('number').value,
+                   "otp" :  document.getElementById('otp').value,
+               }
+               console.log(login);
+           }
+        </script>
+    </body>
+</html>
